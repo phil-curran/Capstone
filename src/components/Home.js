@@ -115,7 +115,7 @@ const Home = () => {
             />
           </a>
           <a id="sleepTrackerBtn" className="item">
-            <Icon path={mdiBedClock} title="Sleep" color="#7f8c8d" size={1.5} />
+            <Icon path={mdiBedClock} title="Sleep" color="#1abc9c" size={1.5} />
           </a>
           <a id="weightTrackerBtn" className="item">
             <Icon
