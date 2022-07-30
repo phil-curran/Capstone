@@ -31,7 +31,7 @@ const SleepDash = () => {
   };
 
   return (
-    <div id="sleepTracker">
+    <div id="sleepDash">
       <h1 className="ui center aligned header">SleepTracker</h1>
       <div className="ui four item pointing secondary menu">
         <a className="item active" data-tab="first">

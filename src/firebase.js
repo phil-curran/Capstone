@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
+import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 const config = {
   apiKey: "AIzaSyC_wqdLNd5F8nmmYkDsQAJzEPkiv0-dkI4",
@@ -12,6 +13,26 @@ const config = {
 
 // Initialize Firebase
 const app = initializeApp(config);
+
+// Initialize Firestore
+const db = getFirestore(app);
+
+// collection reference
+const sleepDataRef = collection(db, "sleepData");
+const journalDataRef = collection(db, "journalData");
+
+// get sleepCollectionData data
+getDocs(sleepDataRef)
+  .then((snapshot) => {
+    let sleepData = [];
+    snapshot.docs.forEach((doc) => {
+      sleepData.push({ ...doc.data(), id: doc.id });
+    });
+    console.log(sleepData);
+  })
+  .catch((error) => {
+    console.log(error.message);
+  });
 
 export const auth = getAuth(app);
 
