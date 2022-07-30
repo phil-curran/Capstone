@@ -102,7 +102,7 @@ const Home = () => {
             <Icon
               path={mdiFormatListChecks}
               title="To Do"
-              color="#7f8c8d"
+              color="#1abc9c"
               size={1.5}
             />
           </a>
@@ -110,7 +110,7 @@ const Home = () => {
             <Icon
               path={mdiNotebookOutline}
               title="Journal"
-              color="#7f8c8d"
+              color="#1abc9c"
               size={1.5}
             />
           </a>
@@ -121,7 +121,7 @@ const Home = () => {
             <Icon
               path={mdiWeightPound}
               title="Weight"
-              color="#7f8c8d"
+              color="#1abc9c"
               size={1.5}
             />
           </a>
@@ -129,7 +129,7 @@ const Home = () => {
             <Icon
               path={mdiChartLine}
               title="Internet Usage"
-              color="#7f8c8d"
+              color="#1abc9c"
               size={1.5}
             />
           </a>
@@ -139,9 +139,6 @@ const Home = () => {
           <div className="ui segment">{activePane}</div>
         </div>
       </div>
-      {/* <button className="ui button" onClick={handleLogOut}>
-        LOGOUT
-      </button> */}
     </>
   );
 };

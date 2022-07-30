@@ -1,5 +1,5 @@
 const JournalDash = () => {
-  return <p>I AM JOURNAL DASH.</p>;
+  return <h1 className="ui center aligned header">Journal</h1>;
 };
 
 export default JournalDash;

@@ -1,5 +1,5 @@
 const WeightDash = () => {
-  return <p>I AM WEIGHT DASH.</p>;
+  return <h1 className="ui center aligned header">Weight Tracker</h1>;
 };
 
 export default WeightDash;

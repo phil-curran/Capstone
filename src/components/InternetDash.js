@@ -1,5 +1,5 @@
 const InternetDash = () => {
-  return <p>I AM INTERNET DASH.</p>;
+  return <h1 className="ui center aligned header">Internet Usage</h1>;
 };
 
 export default InternetDash;

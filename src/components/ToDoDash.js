@@ -1,5 +1,5 @@
 const ToDoDash = () => {
-  return <p>I AM TODODASH</p>;
+  return <h1 className="ui center aligned header">ToDo</h1>;
 };
 
 export default ToDoDash;
