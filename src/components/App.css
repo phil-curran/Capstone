@@ -1,3 +1,30 @@
 #LoginPage {
   margin-top: 250px;
 }
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.visible {
+  visibility: visible;
+  display: block;
+}
+
+.sidebarMenu .button {
+  margin: 1em;
+  display: inline;
+  z-index: 10;
+}
+
+.drawer {
+  /* margin-bottom: 8px; */
+      padding: 0em 0em 0.5em;
+
+}
+
+.checklist-block {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
