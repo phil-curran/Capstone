@@ -9,6 +9,7 @@ import {
   mdiBedClock,
   mdiWeightPound,
   mdiChartLine,
+  mdiLogoutVariant,
 } from "@mdi/js";
 import "./App.css";
 
@@ -79,6 +80,7 @@ const Home = () => {
       console.log(error);
     }
   };
+
   return (
     <>
       {/* hamburger menu */}
@@ -94,7 +96,7 @@ const Home = () => {
             <Icon
               path={mdiMonitorDashboard}
               title="Dashboard"
-              color="#1abc9c"
+              color="#e74c3c"
               size={1.5}
             />
           </a>
@@ -102,7 +104,7 @@ const Home = () => {
             <Icon
               path={mdiFormatListChecks}
               title="To Do"
-              color="#1abc9c"
+              color="#f1c40f"
               size={1.5}
             />
           </a>
@@ -115,21 +117,29 @@ const Home = () => {
             />
           </a>
           <a id="sleepTrackerBtn" className="item">
-            <Icon path={mdiBedClock} title="Sleep" color="#1abc9c" size={1.5} />
-          </a>
-          <a id="weightTrackerBtn" className="item">
-            <Icon
-              path={mdiWeightPound}
-              title="Weight"
-              color="#1abc9c"
-              size={1.5}
-            />
+            <Icon path={mdiBedClock} title="Sleep" color="#3498db" size={1.5} />
           </a>
           <a id="internetUsageBtn" className="item">
             <Icon
               path={mdiChartLine}
               title="Internet Usage"
-              color="#1abc9c"
+              color="#e67e22"
+              size={1.5}
+            />
+          </a>
+          <a id="weightTrackerBtn" className="item">
+            <Icon
+              path={mdiWeightPound}
+              title="Weight"
+              color="#9b59b6"
+              size={1.5}
+            />
+          </a>
+          <a id="logOutBtn" className="item" onClick={handleLogOut}>
+            <Icon
+              path={mdiLogoutVariant}
+              title="Logout"
+              color="#c0392b"
               size={1.5}
             />
           </a>
