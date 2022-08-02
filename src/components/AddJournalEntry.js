@@ -4,24 +4,16 @@ const AddJournalEntry = ({ addEntry }) => {
       <form onSubmit={addEntry} className="ui form">
         <div className="ui grid">
           <div className="row">
-            <div className="thirteen wide column">
+            <div className="fifteen wide column">
               <div className="field">
                 <input type="text" name="title" placeholder="Title..." />
               </div>
             </div>
-            <div className="three wide column">
+            <div className="one wide column">
               <div className="field">
-                <div className="ui right floated icon buttons">
-                  <button type="submit" className="ui green icon button">
-                    <i className="save outline icon"></i>
-                  </button>
-                  <button className="ui grey icon button">
-                    <i className="undo icon"></i>
-                  </button>
-                  <button className="ui red icon button">
-                    <i className="trash alternate outline icon"></i>
-                  </button>
-                </div>
+                <button type="submit" className="ui green icon button">
+                  <i className="save outline icon"></i>
+                </button>
               </div>
             </div>
           </div>
@@ -33,10 +25,9 @@ const AddJournalEntry = ({ addEntry }) => {
             </div>
           </div>
           <div className="row">
-            <div className="fourteen wide column">
-              <div className="fluid ui inline field">
-                <label>Tags: </label>
-                <input type="text" name="tags" placeholder="Tags" />
+            <div className="column">
+              <div className="fluid field">
+                <input type="text" name="tags" placeholder="Tags..." />
               </div>
             </div>
           </div>

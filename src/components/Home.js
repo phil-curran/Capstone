@@ -9,7 +9,6 @@ import {
   mdiBedClock,
   mdiWeightPound,
   mdiChartLine,
-  mdiLogoutVariant,
 } from "@mdi/js";
 import "./App.css";
 
@@ -84,11 +83,18 @@ const Home = () => {
   return (
     <>
       {/* hamburger menu */}
-      <a className="item sidebarMenu">
-        <button className="ui icon button sidebarMenu">
-          <i className="sidebar icon"></i>
+      <div className="row">
+        <a className="item sidebarMenu">
+          <button className="ui icon button sidebarMenu">
+            <i className="sidebar icon"></i>
+          </button>
+        </a>
+      </div>
+      <div className="row">
+        <button className="ui icon button" onClick={handleLogOut}>
+          <i className="sign-out icon"></i>
         </button>
-      </a>
+      </div>
       {/* actual sidebar */}
       <div className="ui container bottom attached pushable">
         <div className="ui inverted labeled icon left inline vertical sidebar menu">
@@ -132,14 +138,6 @@ const Home = () => {
               path={mdiWeightPound}
               title="Weight"
               color="#9b59b6"
-              size={1.5}
-            />
-          </a>
-          <a id="logOutBtn" className="item" onClick={handleLogOut}>
-            <Icon
-              path={mdiLogoutVariant}
-              title="Logout"
-              color="#c0392b"
               size={1.5}
             />
           </a>

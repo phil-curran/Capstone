@@ -26,11 +26,6 @@ class JournalDash extends React.Component {
         this.setState((prevState) => ({
           journalEntries: retrievedEntries,
         }));
-
-        console.log(this.state.journalEntries);
-        this.setState({
-          currentView: <JournalEntryList entries={this.state.journalEntries} />,
-        });
       })
       .catch((error) => {
         console.log(error.message);
@@ -54,11 +49,14 @@ class JournalDash extends React.Component {
     e.target.entry.value = "";
     e.target.tags.value = "";
     this.getEntries();
+    this.setState({
+      currentView: <JournalEntryList entries={this.state.journalEntries} />,
+    });
   };
 
   handleAddNewEntryClick = () => {
     this.setState({
-      currentView: this.addEntryForm,
+      currentView: <AddJournalEntry addEntry={this.addEntry} />,
     });
   };
 
@@ -95,7 +93,9 @@ class JournalDash extends React.Component {
                 </button>
               </div>
             </div>
-            {this.state.currentView}
+            <div className="row">
+              <div className="column">{this.state.currentView}</div>
+            </div>
           </div>
         </div>
       </>
